@@ -1,1 +1,32 @@
-
+{
+  "posts": [
+    {
+      "title": "MS Security-Best-Practice: Configurer le MFA",
+      "body": "Pour sécuriser les comptes utilisateurs, il est possible d'activer le MFA sur le tenant O365.Pour s'authentifier, les utilisateurs devront, (en plus de leurs mot de passe), accepter une notification push sur leurs téléphone. Une fois le MFA activé, si un compte est compromis par vol de mot de passe, la personne malveillante ne pourra se loguer sans le terminal mobile de l'utilisateur associé au compte. "
+    },
+    {
+      "title": "MS Security-Best-Practice: Superviser les activitées de votre service de fédération",
+      "body": "Il est important de bien superviser les activitées d'authentification sur l'ADFS: authentification en echecs , authentification depuis des ips exotiques.. "
+    },
+    {
+      "title": "MS Security-Best-Practice: déconnectez-vous !",
+      "body": "Déconnectez-vous de microsoft lorsque vous utilisez un ordinateur partagé avec d’autres personnes.Si vous oubliez de le faire, vous pouvez-vous déconnecter à distance."
+    },
+     {
+      "title": "MS Security-Best-Practice: activer l'authentification moderne (et désactiver l'authentification legacy!)",
+      "body": "La Modern authentication est liée à l’utilisation d’ADAL (Active Directory Authentication Library) pour l’authentification sur les clients Office. ADAL permet l’ouverture à des moyens d’authentification diverses tels que l’authentification multi-facteurs (MFA), l’utilisation d’un fournisseur d’identité basé sur le protocole SAML, l’authentification via smart card ou certificats. De plus, l’utilisation d’ADAL au niveau d’Outlook permet de ne plus utiliser l’authentification basique.En résumé, la modern authentication de Microsoft est la possibilité d’utiliser des protocoles standards qui ne sont plus « propres » à Microsoft (tel que WS-Federation)."
+    },
+     {
+      "title": "MS Security-Best-Practice: gérer le cycle de vie des comptes utilisateurs",
+      "body": "Sur Office 365, on retrouve trois types d’utilisateurs ayant chacun des niveaux de privilèges différents : les administrateurs, les utilisateurs internes et les invités (externes invités à collaborer sur un fichier ou au sein d’un Groupe O365 ou d’un site SharePoint). Pour chacun des trois types de compte, il conviendra de bien gérer le cycle de vie : création, suppression. Des revues des comptes invités devront également être réalisées afin d'identifier les comptes à purger."
+    }, 
+     {
+      "title": "MS Security-Best-Practice: Gestion et sécurité des données Office 365 avec EMS",
+      "body": "Grâce à EMS, vous bénéficiez de capacités de surveillance et de contrôle sur tous les différents niveaux de privilèges utilisateurs. Vous pouvez monitorer les accès des administrateurs permanents au sein de votre entreprise et utiliser des accès administrateurs ponctuels. L’assistant de sécurité EMS simplifie la conversion des administrateurs permanents en administrateurs ponctuels, de manière à faciliter la gestion et la mise en œuvre des privilèges à la demande.Des rapports d’audit et le monitoring des accès permettent de déterminer quels utilisateurs ont encore besoins de disposer de droits d’administration sur tel ou tel service. EMS vous signalera les rôles inactifs afin que vous puissiez réduire ou éliminer les privilèges inutilisés, vous pourrez ainsi gérer plus simplement et précisément les niveaux d’accès accordés."
+    },
+      {
+      "title": "MS Security-Best-Practice: Mettre en place des accès conditionnels basés sur les risques potentiels",
+      "body": "vous pouvez  définir des conditions d’accès basés sur quatre critères :L’emplacement géographique :Définissez un ensemble d’adresses IP de confiance afin d’autoriser l’accès uniquement à partir de celles- ci. Si un utilisateur tente d’accéder aux ressources de l’entreprise à partir d’un réseau inconnu, des contrôles d’accès spécifiques lui seront imposés (authentification multifacteur (MFA) voire blocage complet de l’accès).Les services et applications :La politique d’accès conditionnel peut aussi se baser sur le type d’applications auxquels souhaite accéder l’utilisateur. En fonction du risque lié à une application vous pourrez définir des conditions de restriction d’accès comme par exemple exiger une authentification multifacteur, bloquer l‘accès depuis les emplacements inconnus,  Grâce à  et Office 365, vous pouvez appliquer ces politiques à n’importe quelle application dans le cloud (SaaS) ou sur un site protégé par Azure Active Directory.  Le risque potentiel (analyse prédictive) :Le Security Graph de Microsoft est capable de détecter les comportements suspects en exploitant l’apprentissage automatique basé sur des milliards de signaux quotidiens émis par l’ensemble des tenants Office 365. En fonction des comportements suspects détectés, l’analyse prédictive va imposer un accès conditionnel basé sur le niveau de risques pour protéger en temps réel vos applications et vos données d’entreprise stratégique.Différents types de contrôles peuvent s’appliquer aux utilisateurs : l’authentification multifacteur, la demande d’inscription de leur périphérique dans la politique de gestion mobile de l’entreprise, une demande d’autorisation à envoyer à l’administrateur ou encore le changement du mot de passe.Les groupes d’utilisateurs :Il est possible de définir différents groupes d’utilisateurs et de leur appliquer plusieurs conditions (en fonction de leur emplacement, l’application à laquelle ils souhaitent accéder, le périphérique utilisé et les niveaux de risque). Vous pouvez aussi exclure certains groupes afin qu’ils ne soient pas affectés par vos politiques d’accès conditionnel."
+    }  
+  ]
+}
